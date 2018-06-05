@@ -1,0 +1,208 @@
+/* THE PRIMARY CSS IS THE MOBILE
+VERSION DISPLAY.  */
+
+/* THE FOLLOWING IS BOILERPLATE**** */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* ************************** */
+
+body{
+    background-color: gainsboro;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*********** the header section */
+.header{
+    /* DISPLAY-FLEX DEFINES A FLEX CONTAINER */
+    display: flex;
+    flex-direction: column;
+    /* TEXT-ALIGN POSITIONS THE TEXT */
+    text-align: center;
+}
+.my_name{
+    margin-right: 15px;
+    color: black;
+    padding-right:10px; 
+}
+.sub_title{
+    margin-right: 15px;
+    color: black;
+    padding-right: 10px;
+}
+
+.letter_d{  
+    width: 150px;
+    min-width: 70px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/************ navigation bar with links*/
+#nav_bar{
+    background-color:black;
+    height: 65px;
+    width: 100%;
+}
+.nav_list{
+    list-style: none;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+.list_item{
+    display: inline-block;
+    padding-right: 50px;
+    
+    /* THE LIST ITEM IS NOT DISPLAYED IN MOBILE VIEWPORT */
+    display: none;
+}
+
+.link_item{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+
+}
+.link_item:hover{
+    color: skyblue;
+}
+
+
+
+/************* THE HAMBURGER MENU ICON */
+/* the div tag that houses the spans */
+#hamburger{
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 50px auto;
+
+    /* ABSOLUTE POSITIONING 190PX FROM THE TOP AND 5PX FROM THE LEFT OF THE PAGE */
+    position: absolute;
+    top: 190px;
+    left: 5px;
+
+}
+
+    
+    /* the span within the div tag */
+    #hamburger span{
+    /* stacked on top of each other */
+        display:block;
+    
+    /* the icon is in front of the background */
+        position: absolute; 
+    
+    /* the height of each individual line */
+        height: 9px; 
+    
+    /* the width is 100% of the 60px of width */
+        width: 100%;
+        background:gainsboro;
+
+        /* makes the hamburger lines rounded */
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+}
+    
+   
+/* each position of each span from the top of the housing div */
+#hamburger span:nth-child(1) {
+    top: 0px;
+}
+    
+#hamburger span:nth-child(2) {
+    top: 18px;
+}
+      
+#hamburger span:nth-child(3) {
+    top: 36px;
+} 
+
+
+
+
+/* *********THE SIDE BAR MENU*********** */
+
+   #side_bar_menu{
+        position: absolute;
+        width: 400px;
+        height: 212px;
+        background: gray;
+        left: 0;
+
+        
+        
+    }
+    /* class added to the side_bar_menu to enable toggle */
+    .active{
+        display: none;
+    }
+
+
+    .side_link_item{
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+    .side_link_item:hover{
+        color: white;
+    }
+    .side_list_item{
+        border-bottom: 1px solid #C0C0C0;
+        padding: 15px 40px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+  
+
+
+
+
+/************the feartured content: the center image */
+
+.featured_container{
+    display: flex;
+    flex-direction: column;
+}
+.featured_text{
+    padding-left: 15px;
+}
+.box{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    color: gray;
+}
+.bottom_rule{
+    padding-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+  
